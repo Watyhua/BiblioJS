@@ -13,12 +13,14 @@ h1, h2,p {
 h3{
     text-align: center;
     color: #2E282A; 
+    font-family: 'Roboto', sans-serif;
 }
 .first,.second{
     margin-top: 50px;
 } 
 h2 {
     margin-top: 250px;
+    font-family: 'Roboto', sans-serif;
     
     
 }
@@ -33,5 +35,8 @@ p{
 .title{
     background-color: #F3F3F3;
     padding-top: 20px;
+}
+.list-group-item:hover{
+    background-color: rgba(145, 151, 174, 0.493);
 }
  

@@ -1,14 +1,14 @@
 
- 
+
 function IsGoodNumber() {
 
     var RandomNumber = Math.floor(Math.random() * (1, 100));
     var number = parseInt(prompt('Trouves le chiffre mystère entre 0 et 100 ! '));
-    var count = 0; 
+    var count = 0;
 
 
     do {
-          
+
         if (number < RandomNumber) {
             var number = parseInt(prompt('C est plus mon lapin !'));
             count++;
@@ -18,9 +18,13 @@ function IsGoodNumber() {
         }
     } while (number !== RandomNumber)
 
-    alert('Félicitations tu as réussi en ' + count +' tentatives, tu crois pouvoir faire mieux? ;)'); 
+    swal({
+        title: "Beau travail !",
+        text: "Tu as réussi en " + count + " tentatives, je suis fier de toi !",
+        icon: "success",
+    });
 }
- 
+
 IsGoodNumber();
 
 /* L'ordinateur choisit un nombre au hasard, plus petit ou égal à 100.

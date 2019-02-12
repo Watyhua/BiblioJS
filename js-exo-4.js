@@ -4,17 +4,23 @@ function IsGoodNumber() {
 
     var RandomNumber = Math.floor(Math.random() * (1, 100));
     var number = parseInt(prompt('Trouves le chiffre mystère entre 0 et 100 ! '));
+    var count = 0; 
+
 
     do {
+          
         if (number < RandomNumber) {
             var number = parseInt(prompt('C est plus mon lapin !'));
+            count++;
         } else if (number > RandomNumber) {
             var number = parseInt(prompt('Moins que ça....'));
+            count++;
         }
     } while (number !== RandomNumber)
-    alert('Félicitations, tu crois pouvoir faire mieux ?');
 
+    alert('Félicitations tu as réussi en ' + count +' tentatives, tu crois pouvoir faire mieux? ;)'); 
 }
+ 
 IsGoodNumber();
 
 /* L'ordinateur choisit un nombre au hasard, plus petit ou égal à 100.

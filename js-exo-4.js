@@ -4,7 +4,7 @@ function IsGoodNumber() {
 
     var RandomNumber = Math.floor(Math.random() * (1, 100));
     var number = parseInt(prompt('Trouves le chiffre mystère entre 0 et 100 ! '));
-    var count = 0;
+    var count = 1;
 
 
     do {

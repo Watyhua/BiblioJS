@@ -1,0 +1,13 @@
+#first, #second, #third {     
+    display: none;
+}
+h1 {
+text-align: center;
+padding: 30px;
+font-size:4rem;
+}
+body{
+background-color: #321325;
+color:white;
+font-family: 'Roboto', sans-serif;
+}

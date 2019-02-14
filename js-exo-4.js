@@ -1,6 +1,5 @@
 
-
-function IsGoodNumber() {
+$("#button").on('click' , function IsGoodNumber() {
 
     var RandomNumber = Math.floor(Math.random() * (1, 100));
     var number = parseInt(prompt('Trouves le chiffre mystère entre 0 et 100 ! '));
@@ -23,9 +22,10 @@ function IsGoodNumber() {
         text: "Tu as réussi en " + count + " tentatives, je suis fier de toi !",
         icon: "success",
     });
-}
+});  
 
-IsGoodNumber();
+
+
 
 /* L'ordinateur choisit un nombre au hasard, plus petit ou égal à 100.
 Le but est de deviner ce nombre. À chaque fois que l'utilisateur propose un nombre, 

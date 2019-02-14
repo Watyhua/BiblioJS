@@ -43,4 +43,20 @@ p{
 body{
     background-color: #5aD;
 }
- 
+img {
+    width: 50px;
+}
+.link{
+    color: white;
+    padding-left: 20px;
+}
+.link:hover{
+    color:black;
+}
+.random {
+    display: flex;
+    justify-content: center;
+}
+#button {
+    width: 200px; 
+}
